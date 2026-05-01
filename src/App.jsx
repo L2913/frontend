@@ -6,7 +6,7 @@ function App() {
 
   // Fetch products from backend
   useEffect(() => {
-    fetch('http://localhost:5000/products')
+    fetch('https://your-backend.onrender.com/products')
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error(err));
